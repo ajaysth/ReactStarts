@@ -1,11 +1,15 @@
 
 
-
+import {Khau, Ghutukka }from "./Op";
 
 function App() {
 
   return (
-    <h1>I am Ajay</h1> 
+    <>
+      <Khau />
+      <p>Nakhane yaar vayo</p>
+      <Ghutukka/>
+    </>
   )
 }
 
