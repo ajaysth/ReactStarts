@@ -1,13 +1,16 @@
-function Khau(){
-    return (
-        <h2>Coffee khau la</h2>
-    )
-}
+import { useContext } from "react";
+import { logincontext } from "./App";
+
+
 
 
 function Piu(){
+    const name = useContext(logincontext);
     return(
-        <h1>Paani pani piu nw</h1>
+        <>
+            <h1>Paani pani piu nw</h1>
+            <h2>{name}</h2>
+        </>
     )
 }
-export { Khau, Piu as  Ghutukka};
+export default Piu;
